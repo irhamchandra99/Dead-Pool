@@ -1,0 +1,18 @@
+{
+  "alive": true,
+  "meaningful_commits": 4,
+  "trivial_commits": 0,
+  "zombie_suspected": false,
+  "red_flags": [],
+  "evidence": [
+    {
+      "sha": "d1e2f3a",
+      "why": "adds the deposit flow"
+    },
+    {
+      "sha": "f3a4b5c",
+      "why": "adds withdraw to the contract"
+    }
+  ],
+  "summary": "The project shows genuine, steady development. Four commits from two authors on four different days add a deposit flow, tests for it, a withdraw function in the Solidity contract and real usage docs. None of it is cosmetic padding."
+}

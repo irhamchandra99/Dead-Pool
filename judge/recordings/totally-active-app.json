@@ -1,0 +1,13 @@
+{
+  "alive": false,
+  "meaningful_commits": 0,
+  "trivial_commits": 8,
+  "zombie_suspected": true,
+  "red_flags": [
+    "whitespace-only commits",
+    "version bumps without code",
+    "README punctuation"
+  ],
+  "evidence": [],
+  "summary": "Eight commits landed in the window, but none changes product behavior. They are whitespace reformatting, tab-to-space swaps, two version bumps, lockfile churn and punctuation-only README edits. The steady weekly cadence from one author looks like manufactured activity."
+}

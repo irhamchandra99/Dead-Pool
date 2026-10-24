@@ -1,0 +1,9 @@
+{
+  "alive": true,
+  "meaningful_commits": 4,
+  "trivial_commits": 0,
+  "zombie_suspected": false,
+  "red_flags": [],
+  "evidence": [],
+  "summary": "Active game development: an on-chain leaderboard, scoring tests, a season reset and player docs, spread over four days by two authors."
+}

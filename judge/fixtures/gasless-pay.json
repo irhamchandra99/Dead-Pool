@@ -1,0 +1,13 @@
+{
+  "description": "A repo with real development after the hackathon.",
+  "commits": [
+    { "sha": "d1e2f3a40000000000000000000000000000000b1", "daysAgo": 1, "author": "builder", "message": "feat: deposit flow",
+      "files": [{ "filename": "src/vault.ts", "additions": 42, "deletions": 3, "patch": "@@ -1,3 +1,42 @@\n+export async function deposit(amount: bigint) {\n+  if (amount <= 0n) throw new Error('amount must be positive');\n+  const tx = await vault.write.deposit([amount]);\n+  return waitFor(tx);\n+}" }] },
+    { "sha": "e2f3a4b50000000000000000000000000000000b2", "daysAgo": 4, "author": "builder", "message": "test: deposit edge cases",
+      "files": [{ "filename": "test/vault.test.ts", "additions": 30, "deletions": 0, "patch": "@@ -0,0 +1,30 @@\n+test('rejects zero deposit', async () => {\n+  await expect(deposit(0n)).rejects.toThrow();\n+});" }] },
+    { "sha": "f3a4b5c60000000000000000000000000000000b3", "daysAgo": 11, "author": "teammate", "message": "feat: withdraw",
+      "files": [{ "filename": "contracts/Vault.sol", "additions": 25, "deletions": 2, "patch": "@@ -10,2 +10,25 @@\n+    function withdraw(uint256 amount) external {\n+        balances[msg.sender] -= amount;\n+        payable(msg.sender).transfer(amount);\n+    }" }] },
+    { "sha": "a4b5c6d70000000000000000000000000000000b4", "daysAgo": 30, "author": "builder", "message": "docs: usage",
+      "files": [{ "filename": "README.md", "additions": 12, "deletions": 1, "patch": "@@ -1,1 +1,12 @@\n+## Usage\n+Connect your wallet, choose an amount and press deposit. Withdrawals are available at any time and the contract keeps a separate balance for every depositor so nobody can touch another person's funds." }] }
+  ]
+}
