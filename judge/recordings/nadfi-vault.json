@@ -1,0 +1,9 @@
+{
+  "alive": true,
+  "meaningful_commits": 4,
+  "trivial_commits": 0,
+  "zombie_suspected": false,
+  "red_flags": [],
+  "evidence": [],
+  "summary": "Real progress after the hackathon: an auto-compounding vault, tests for edge cases, an emergency withdraw path and a strategy guide. Two contributors, four active days, all changes touch real code or substantive docs."
+}
