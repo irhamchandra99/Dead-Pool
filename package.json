@@ -1,0 +1,19 @@
+{
+  "name": "dead-pool",
+  "private": true,
+  "packageManager": "pnpm@9.13.0",
+  "scripts": {
+    "contracts:build": "cd contracts && forge build",
+    "contracts:test": "cd contracts && forge test",
+    "abi": "pnpm --filter @deadpool/shared run sync-abi",
+    "judge": "pnpm --filter @deadpool/judge run judge",
+    "seed": "pnpm --filter @deadpool/scripts run seed",
+    "e2e:local": "bash scripts/e2e-local.sh",
+    "web:dev": "pnpm --filter @deadpool/web dev",
+    "web:build": "pnpm --filter @deadpool/web build",
+    "test": "pnpm contracts:test && pnpm --filter @deadpool/judge test",
+    "demo": "bash scripts/demo-local.sh",
+    "demo:testnet": "bash scripts/demo-testnet.sh",
+    "judge:serve": "pnpm --filter @deadpool/judge serve"
+  }
+}

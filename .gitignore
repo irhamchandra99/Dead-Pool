@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.local
+.next/
+out/
+cache/
+broadcast/
+contracts/out/
+contracts/cache/
+dist/
+*.log
+.DS_Store
+judge/verdicts/*.json
+.deployments/
+web/.env.local
+*.tsbuildinfo
+web/.next-build/
