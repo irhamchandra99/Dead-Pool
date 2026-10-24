@@ -1,7 +1,0 @@
-{
-  "description": "A repo whose last commit was the hackathon submission, long before the review window.",
-  "commits": [
-    { "sha": "0b1c2d3e0000000000000000000000000000000c1", "daysAgo": 140, "author": "old-team", "message": "final submission",
-      "files": [{ "filename": "src/main.ts", "additions": 300, "deletions": 0 }] }
-  ]
-}

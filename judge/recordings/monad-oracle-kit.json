@@ -1,9 +1,0 @@
-{
-  "alive": true,
-  "meaningful_commits": 4,
-  "trivial_commits": 0,
-  "zombie_suspected": false,
-  "red_flags": [],
-  "evidence": [],
-  "summary": "The oracle kit kept moving: a price feed adapter, fuzz tests, a staleness check and an integration guide. Each commit changes behaviour or documents a real feature."
-}
